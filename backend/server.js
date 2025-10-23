@@ -9,9 +9,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api/products', ProductRoutes.then(module => module.default));
-
-
+app.use('/api/products', ProductRoutes);
 
 
 
